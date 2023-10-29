@@ -1,0 +1,64 @@
+// form validation
+
+function validation() {
+    var name = document.getElementById('exampleInputEmail1').value;
+    var number = document.getElementById('exampleInputEmail2').value;
+    var email = document.getElementById('exampleInputEmail3').value;
+    var address = document.getElementById('exampleInputEmail4').value;
+    var password = document.getElementById('exampleInputEmail5').value;
+    var c_password = document.getElementById('exampleInputEmail6').value;    
+
+    var namecheck = /^[A-Za-z ]{2,}$/;
+    var emailcheck = /^[A-Za-z0-9._]{3,}@[A-Za-z0-9]{3,}[.]{1}[A-Za-z]{2,6}$/;
+    var addresscheck = /^[A-Za-z0-9.-]$/;
+    var numbercheck = /^[6789][0-9]{9}$/;
+    var passwordcheck = /^[A-Za-z0-9!@#$%^&*]{8,16}$/;
+
+    if(namecheck.test(name)){
+        document.getElementById('error-text').innerHTML = "";
+    }
+    else{
+        document.getElementById('error-text').innerHTML = "Use only Alphabets";
+        return false;
+    }
+
+    if(emailcheck.test(email)){
+        document.getElementById('error-email').innerHTML = "";
+    }
+    else{
+        document.getElementById('error-email').innerHTML = "Invalid Email-ID, eg:abc@gmail.com";
+        return false;
+    }
+
+    if(numbercheck.test(number)){
+        document.getElementById('error-number').innerHTML = "";
+    }
+    else{
+        document.getElementById('error-number').innerHTML = "Invalid Number";
+        return false;
+    }
+
+    if(addresscheck.test(address)){
+        document.getElementById('error-address').innerHTML = "";
+    }
+    else{
+        document.getElementById('error-address').innerHTML = "Invalid";
+        return false;
+    }
+
+    if(passwordcheck.test(password)){
+        document.getElementById('error-password').innerHTML = "";
+    }
+    else{
+        document.getElementById('error-password').innerHTML = "Invalid Password";
+        return false;
+    }
+
+    if(c_password.match(password)){
+        document.getElementById('error-c-password').innerHTML = "";
+    }
+    else{
+        document.getElementById('error-c-password').innerHTML = "Password does not match, Please enter the correct Password to confirm";
+        return false;
+    }
+}
