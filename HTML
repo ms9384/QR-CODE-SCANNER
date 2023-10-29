@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO(Search Engine Operation) -->
+
+    <meta name="keywords" content="web development, website development, web application">
+    <meta name="description" content="">
+    <title>CHM QR CODES</title>
+    <link rel="shortcut icon" href="c:\Users\MEGHAA SATHISH\Downloads\C.png" 
+    type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Customised CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CHM QR CODES</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_us.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        
+        <!--Form
+        <form action="">
+            <label for="">Name</label> <br>
+            <input type="text" id="input-1" placeholder="Name" required> <br><br> required means mandatory
+            <input type="email" placeholder="Email ID" value="meghaa@gmail.com" disabled> <br><br> 
+            disabled means it can be enabled for ediing using Javascript
+            <input type="number" placeholder="Contact Number" value="9845672354" readonly> <br><br> 
+            readonly means nothing can be edited
+            <input type="password" placeholder="Password"> <br><br>
+
+            <label for="">Upload Profile Picture</label> <br>
+            <input type="file"> <br><br> placeholder won't work for file type so ue label
+            <input type="link" placeholder="Meeting Link"> <br><br>
+
+            <label for="">Date of Birth</label> <br>
+            <input type="date"> <br><br>
+
+            <label for="">Time</label> <br>
+            <input type="time"> <br><br>
+
+            <label for="">Date and Time</label> <br>
+            <input type="datetime-local"> <br><br>
+
+            <label for="">Month</label> <br>
+            <input type="month"> <br><br>
+
+            <label for="">Gender</label> <br>
+            <input type="radio" name="gender" value="male">Male <br>
+            <input type="radio" name="gender" value="female">Female <br>
+            <input type="radio" name="gender" value="other">Other <br><br>
+
+            <label for="">Skills</label> <br>
+            <input type="checkbox" name="skill" value="HTML">HTML <br>
+            <input type="checkbox" name="skill" value="CSS">CSS <br>
+            <input type="checkbox" name="skill" value="Javascript">Javascript <br>
+            <input type="checkbox" name="skill" value="Bootstrap">Bootstrap <br><br>
+
+            <select name="" id="">
+                <option value="">--Select Branch--</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="ECE">Electronics and Communication</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Civil">Civil</option>
+            </select><br><br>
+
+            <label for="">About</label> <br>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Write about Yourself...."></textarea> <br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+            <button type="button">Okay</button>
+
+        </form> <br><br>
+        -->
+         
+<!--Dividing screen using HTML and CSS-->
+<div class="main-container">
+    <div class="box">
+        <div class="box-img">
+            <img src="c:\Users\MEGHAA SATHISH\Downloads\img1.jpg" width="100%" height="100%" alt="Image">
+        </div>
+        <div class="box-content">
+            <h4>THE ULTIMATE DESTINATION WHERE ALL BUSINESS CARDS RESUMES ARE PERSONALLY MADE</h4>
+                <div class="btn-container">
+                    <a href="" class="btn-style">Know More</a>
+                </div>
+           
+        </div>
+    </div>
+</div>
+ 
+<!-- Dividing into unequal parts -->
+<div class="container pb-5">
+    <h2>Information Form</h2>
+    <div class="row">
+        <div class="col-md-5">
+            <form name="Info-Googlesheet" onsubmit="return validation()" method="post">
+                <div class="mb-3">
+                    <label for="exampleInput1"class="form-label">Name</label>
+                    <input type="text" name="NAME" class="form-control" id="exampleInputEmail1">
+                    <span id="error-text" style="color: red; font-size: 10px;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInput1"class="form-label">Contact Number</label>
+                    <input type="number" name="NUMBER" class="form-control" id="exampleInputEmail2">
+                    <span id="error-number" style="color: red; font-size: 10px;"></span>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="exampleInput1"class="form-label">Email ID</label>
+                    <input type="email" name="E-MAIL" class="form-control" id="exampleInputEmail3">
+                    <span id="error-email" style="color: red; font-size: 10px;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInput1"class="form-label">Technical Information</label>
+                    <input type="text" name="TECHNICAL INFORMATION" class="form-control" id="exampleInputEmail4">
+                    <span id="error-text" style="color: red; font-size: 10px;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label">Soft Skills</label>
+                    <input type="text" name="SOFT SKILLS" class="form-control" id="exampleInputEmail5">
+                    <span id="error-text" style="color: red; font-size: 10px;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label">Courses/Training</label>
+                    <input type="text" name="COURSES/TRAINING" class="form-control" id="exampleInputEmail5">
+                    <span id="error-text" style="color: red; font-size: 10px;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label">Achievements</label>
+                    <input type="text" name="ACHIEVEMENTS" class="form-control" id="exampleInputEmail5">
+                    <span id="error-text" style="color: red; font-size: 10px;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label">Experience</label>
+                    <input type="text" name="EXPERIENCE" class="form-control" id="exampleInputEmail5">
+                    <span id="error-text" style="color: red; font-size: 10px;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label">Education</label>
+                    <input type="text" name="EDUCATION" class="form-control" id="exampleInputEmail5">
+                    <span id="error-text" style="color: red; font-size: 10px;"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+             </form>
+        </div>
+
+        <div class="col-md-7">
+            <div class="feedback-img">
+                <img src="c:\Users\MEGHAA SATHISH\Downloads\img2.jpeg" width=100% alt="Image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Bootstrap Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+
+<!-- Customised JS -->
+<script src="C:\Users\Sathish\OneDrive\Documents\js\javascriptfile.js"></script>
+
+<!--
+    var sheetName = 'Sheet1'
+    var scriptProp = PropertiesService.getScriptProperties()
+
+    function initialSetup() {
+      var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+      scriptProp.setProperty('key', activeSpreadsheet.getId())
+    }   
+
+    function doPost(e) {
+      var lock = LockService.getScriptLock()
+      lock.tryLock(10000)
+
+      try {
+      var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+      var sheet = doc.getSheetByName(sheetName)
+
+      var headers = sheet.getRange(1,1,1,sheet.getLastColumn()).getValues()[0]
+      var nextRow = sheet.getLastRow()+1
+
+      var newRow = headers.map(function(header){
+        return header === 'timestamp' ? new Date() : e.parameter[header]
+      })
+      
+      sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+
+      return ContentService
+        .createTextOutput(JSON.stringify({'result': 'success','row': nextRow}))
+        .setMimeType(ContentService.MimeType.JSON)
+      }
+
+      catch(e) {
+      return ContentService
+        .createTextOutput(JSON.stringify({'result': 'success','row': nextRow}))
+        .setMimeType(ContentService.MimeType.JSON)
+      }
+    
+      finally{
+      lock.releaseLock()
+      }
+    }
+-->
+<!--
+<script>
+    const scriptURL = 
+        'https://script.google.com/macros/s/AKfycbx0xqcekXUfEMONkCKo7E93Y6LlEHkOquKFYVxxZg3pGxGsZlfIN4bUoPU3LuOtGy_aGg/exec'
+    const form = document.forms['SignUp-Googlesheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form)
+        })
+        .then(response => alert(
+            "Sign Up completed!!!"))
+        .catch(error => console.error('Error!', error.message))
+    })
+
+</script>
+-->
+
+&copy; &reg; &trade;
+</body>
+</html>
